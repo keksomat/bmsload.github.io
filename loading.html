@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var ratio;
+var left;
+resize();
+
+$(window).resize(function () {resize();});
+
+function resize()
+{
+    ratio = window.innerHeight / $('body').innerHeight();
+    if (window.innerWidth / $('body').innerWidth() < ratio) {
+        ratio = window.innerWidth / $('body').innerWidth();
+    }
+    ratio -= .04;
+    $('body').css('-ms-zoom', ratio);
+    $('body').css('-moz-transform', 'scale(' + ratio + ')');
+    $('body').css('-o-transform', 'scale(' + ratio + ')');
+    $('body').css('-webkit-transform', 'scale(' + ratio + ')');
+    $('body').css('transform', 'scale(' + ratio + ')');
+    left = ($(window).innerWidth() - $('body').outerWidth() * ratio) / 2;
+    $('body').css('left', left);
+}
+</script>
+<div class=footer>
+<strong>Hardcoded by @Ushev, Bulgarian Metrostroi Server 2018</strong>
+<p id="FileStatus"> </p>
+</div>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode ) {
+document.getElementById("Server").innerHTML = servername;
+document.getElementById("Map").innerHTML = mapname;
+}
+function DownloadingFile( fileName ) {
+document.getElementById("FileLoad").innerHTML = fileName;
+}
+function SetStatusChanged( status ) {
+document.getElementById("FileStatus").innerHTML = status;
+}
+</script>
+</head>
+
+<body>
+<div class="bg">
+<div class="rect1" style="position:relative; right:-800px">
+
+
+<div class="centertext">Rules and Facts
+<div class="fontrules" style="font-size:20px; text-align:left">
+1. Dont crash the server! <br>
+2. Respect the Staff and the Administration! <br>
+3. Don't mess the work of the Instructors!(might get kicked or banned!) <br>
+4. Don't Minge! (punishable!!) <br>
+5. Don't propspam!(Permanent ban!!!) <br>
+6. Serious Roleplay is welcomed. <br>
+7. Strictly PROHIBITED is using cheats and breaking the 'world' props (Permanent ban, no reverse!!!) <br>
+8. Most of the time Russians play in the server, so don't be afraid to chat on English. (Admins would help) <br>
+</div>
+</div>
+<audio controls autoplay id="myaudio">
+  <source src="dunav.mp3">
+</audio>
+<div style="font-family:Trebuchet MS" style="font-size:20px; text-align:left">
+<strong>Song: Дунавско хоро(Dunavsko Horo)</strong> <br>
+</div>
+
+<script>
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.05;
+</script>
+<div class="rect2" style="position:relative; left:-800px; top:-283px; opacity:1";>
+<div class="centertext">Server Administration Info.
+<div style="font-family:Trebuchet MS; font-size:24px; text-align:left; line-height:200%">
+Ushev, SteamID: STEAM_0:1:42913002 <br>
+HURB, SteamID: STEAM_0:1:164786562 <br>
+Dodo, SteamID: STEAM_0:0:99429071 <br>
+-------------------------------------------------------
+</div>
+<div style="font-family:Trebuchet MS; font-size:24px; text-align:left">NOTE: If there isn't any admin online, you can always contact the Instructors for help. <br>
+<p id="Map" style="line-height:100%">Map: </p> <br>
+Gamemode: Metrostroi
+<text>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.rect1{
+   width:500px;
+  height:400px;
+  border-radius:20px;
+  background-color:gray;
+  opacity: 0.6;
+  
+}
+
+.rect2{
+   width:500px;
+  height:400px;
+  border-radius:20px;
+  background-color:gray;
+  opacity: 0.6;
+}
+
+.centertext {
+font-family:Trebuchet MS;
+text-align:center;
+font-size:26px;
+
+}	//center text class
+
+.fontrules {
+font-family:Trebuchet MS;
+text-align:left;
+font-size:20px;
+position:absolute;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  opacity: 0.5;
+  font-family: Trebuchet MS;
+  text-align: center;
+}
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    /* The image used */
+    background-image:url("img.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
